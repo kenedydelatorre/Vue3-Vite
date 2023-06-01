@@ -2,6 +2,7 @@
 import Header from "@/components/globals/header.vue"
 import ThreeHeader from "@/components/globals/header-menus.vue"
 import Product from "@/components/product/product.vue"
+import Footer from "@/components/globals/footer.vue"
 import {alphabeth} from "./alfabeth.js"
 
 const Lalphabeth = alphabeth
@@ -12,7 +13,7 @@ const Lalphabeth = alphabeth
 .container-xxs.container-xs.container-md
     Header
     ThreeHeader
-    section.container.content-produce.p-0
+    section.container.content-produce.bg-transparent.bg-bage-institucional.p-0
         .img-header
             img(src="@/assets/logos-header/hidrobiologico-header.svg", alt="")
         h3.fw-bolder.text-institucional.text-center.pt-5 Ofertas de productores
@@ -27,6 +28,7 @@ const Lalphabeth = alphabeth
                 a.btn.bg-white.mx-1 {{ alpha.content }}
                 
         Product
+    Footer
         
 </template>
 

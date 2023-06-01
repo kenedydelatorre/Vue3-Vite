@@ -9,13 +9,12 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
-    BButton: typeof import('bootstrap-vue-next')['BButton']
-    BCarousel: typeof import('bootstrap-vue-next')['BCarousel']
-    BCarouselSlide: typeof import('bootstrap-vue-next')['BCarouselSlide']
     BFormInput: typeof import('bootstrap-vue-next')['BFormInput']
     BInputGroup: typeof import('bootstrap-vue-next')['BInputGroup']
     BInputGroupAppend: typeof import('bootstrap-vue-next')['BInputGroupAppend']
+    Footer: typeof import('./src/components/globals/footer.vue')['default']
     Header: typeof import('./src/components/globals/header.vue')['default']
+    HeaderFooter: typeof import('./src/components/globals/header-footer.vue')['default']
     HeaderMenus: typeof import('./src/components/globals/header-menus.vue')['default']
     Offers: typeof import('./src/components/offers/offers.vue')['default']
     Product: typeof import('./src/components/product/product.vue')['default']

@@ -20,12 +20,6 @@
                 img(src="@/assets/singIn/servicios-ex.svg")
                 span.text-white.px-2 Servicios para tu negocio
                 img(src="@/assets/singIn/sesion.svg")
-
-//- .container-xs.m-0.p-0.img-size
-//-     .d-flex.justify-content-between.mt-xs-3
-//-         img(src="@/assets/logos-header/logo_mt_produccion.png" alt height="55")#logo_mt_produccion
-//-         img(src="@/assets/logos-header/con_punche_peru.png" alt height="80")#logo_con_punche
-//-         img(src="@/assets/logos-header/bicentenario.png" alt height="90")#logo_bicentenario
 </template>
 <style lang="stylus" scoped>
 .transparent
