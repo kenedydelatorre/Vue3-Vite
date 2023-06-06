@@ -12,7 +12,6 @@ const bgInstitucional = ref({
 onMounted(() => {
     const route = useRoute()
     const params = route.params 
-    console.log(params.id)
     if (params.id === '1')
         bgInstitucional.value.url = 'url(/src/assets/singIn/list-images-login/agricultura.svg)'
     else if(params.id === '2')

@@ -18,10 +18,12 @@ declare module '@vue/runtime-core' {
     HeaderMenus: typeof import('./src/components/globals/header-menus.vue')['default']
     Offers: typeof import('./src/components/offers/offers.vue')['default']
     Product: typeof import('./src/components/product/product.vue')['default']
+    Register: typeof import('./src/components/register/register.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     SearchProduct: typeof import('./src/components/searchProduct/searchProduct.vue')['default']
     SearchTypeProduct: typeof import('./src/components/searchProduct/searchTypeProduct.vue')['default']
+    Seller: typeof import('./src/components/register/seller/seller.vue')['default']
     SingIn: typeof import('./src/components/singIn/singIn.vue')['default']
   }
 }

@@ -25,6 +25,19 @@ export default [
     meta: { requiresAuth: true },
     component: ()=> import("../components/offers/offers.vue"),
   },  
+  {
+    path: "/registro",
+    name: "register-2",
+    meta: { requiresAuth: true },
+    component: ()=> import("../components/register/register.vue"),
+  }, 
+  {
+    path: "/registro/:id",
+    name: "register",
+    meta: { requiresAuth: true },
+    component: ()=> import("../components/register/register.vue"),
+  },  
+
 //   {
 //     path: "/inicio-sesion",
 //     name: "login",
