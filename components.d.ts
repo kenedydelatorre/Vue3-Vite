@@ -12,6 +12,8 @@ declare module '@vue/runtime-core' {
     BFormInput: typeof import('bootstrap-vue-next')['BFormInput']
     BInputGroup: typeof import('bootstrap-vue-next')['BInputGroup']
     BInputGroupAppend: typeof import('bootstrap-vue-next')['BInputGroupAppend']
+    BTab: typeof import('bootstrap-vue-next')['BTab']
+    BTabs: typeof import('bootstrap-vue-next')['BTabs']
     Footer: typeof import('./src/components/globals/footer.vue')['default']
     Header: typeof import('./src/components/globals/header.vue')['default']
     HeaderFooter: typeof import('./src/components/globals/header-footer.vue')['default']
