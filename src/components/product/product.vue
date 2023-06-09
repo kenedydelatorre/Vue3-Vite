@@ -4,7 +4,7 @@ import {Lproducts} from "./product.js"
 </script>
 <template lang="pug">
 .list-products
-    .container.bg-transparent.pt-5
+    .container.pt-5.bg-bage-institucional
         .row.row-list-products
             template(v-for="prod of Lproducts")
                 .col-3

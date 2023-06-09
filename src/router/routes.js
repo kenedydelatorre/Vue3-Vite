@@ -25,6 +25,12 @@ export default [
     meta: { requiresAuth: true },
     component: ()=> import("../components/offers/offers.vue"),
   },  
+  {
+    path: "/detalle-de-producto",
+    name: "product-detail",
+    meta: { requiresAuth: true },
+    component: ()=> import("../components/product/product_detail.vue"),
+  },    
 //   {
 //     path: "/inicio-sesion",
 //     name: "login",
