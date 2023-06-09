@@ -17,14 +17,15 @@ const router = createRouter({
 
 // Before each route evaluates...
 router.beforeEach((routeTo, routeFrom, next) => {
-  if (import.meta.env.VITE_VUE_APP_DEFAULT_AUTH === "session") {
+  // if (import.meta.env.VITE_VUE_APP_DEFAULT_AUTH === "session") {
 
-    let newRouteLogin
-    if (routeTo.name === 'singIn'){
-      newRouteLogin = routeTo.path
-    }
+  //   let newRouteLogin
+  //   if (routeTo.name === 'singIn'){
+  //     newRouteLogin = routeTo.path
+  //   }
 
 
+<<<<<<< HEAD
     // Page routes registers 
     const publicPages = [newRouteLogin, '/registro', '/busqueda-producto', '/busqueda-tipo-producto', '/ofertas-de-productores', '/detalle-de-producto']
     // Validation route un list 
@@ -40,6 +41,23 @@ router.beforeEach((routeTo, routeFrom, next) => {
       return next('/')
     }
   }
+=======
+  //   // Page routes registers 
+  //   const publicPages = [newRouteLogin, '/registro', '/busqueda-producto', '/busqueda-tipo-producto', '/ofertas-de-productores']
+  //   // Validation route un list 
+  //   const authpage = publicPages.includes(routeTo.path);
+  //   // Get sesion storage for validate state session
+  //   const isActiveSesion = sessionStorage.getItem('isActiveSesion');
+    
+  //   if (!authpage && isActiveSesion === null) { // Validate route diferent a routes public and activeSesion null
+  //     return next('/inicio-sesion');
+  //   }else if(!authpage && isActiveSesion === 'false') { // Validate route diferent a routes public and activeSesion false
+  //     return next('/inicio-sesion');
+  //   }else if(authpage && isActiveSesion === 'true'){// Validate route diferent a routes public and activeSesion false
+  //     return next('/')
+  //   }
+  // }
+>>>>>>> 4117a24c1caaef67b709c6bcb03a2de1ed64889e
   next();
 })
 

@@ -12,6 +12,8 @@ declare module '@vue/runtime-core' {
     BFormInput: typeof import('bootstrap-vue-next')['BFormInput']
     BInputGroup: typeof import('bootstrap-vue-next')['BInputGroup']
     BInputGroupAppend: typeof import('bootstrap-vue-next')['BInputGroupAppend']
+    BTab: typeof import('bootstrap-vue-next')['BTab']
+    BTabs: typeof import('bootstrap-vue-next')['BTabs']
     Footer: typeof import('./src/components/globals/footer.vue')['default']
     Header: typeof import('./src/components/globals/header.vue')['default']
     HeaderFooter: typeof import('./src/components/globals/header-footer.vue')['default']
@@ -20,13 +22,18 @@ declare module '@vue/runtime-core' {
     HeaderMenus: typeof import('./src/components/globals/header-menus.vue')['default']
     Offers: typeof import('./src/components/offers/offers.vue')['default']
     Product: typeof import('./src/components/product/product.vue')['default']
+<<<<<<< HEAD
     Product_detail: typeof import('./src/components/product/product_detail.vue')['default']
+=======
+    Register: typeof import('./src/components/register/register.vue')['default']
+>>>>>>> 4117a24c1caaef67b709c6bcb03a2de1ed64889e
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     SearchOferta: typeof import('./src/components/searchProduct/searchOferta.vue')['default']
     SearchOffert: typeof import('./src/components/searchProduct/searchOffert.vue')['default']
     SearchProduct: typeof import('./src/components/searchProduct/searchProduct.vue')['default']
     SearchTypeProduct: typeof import('./src/components/searchProduct/searchTypeProduct.vue')['default']
+    Seller: typeof import('./src/components/register/seller/seller.vue')['default']
     SingIn: typeof import('./src/components/singIn/singIn.vue')['default']
   }
 }
