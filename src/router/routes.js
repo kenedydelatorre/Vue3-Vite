@@ -26,13 +26,12 @@ export default [
     component: ()=> import("../components/offers/offers.vue"),
   },  
   {
-<<<<<<< HEAD
     path: "/detalle-de-producto",
     name: "product-detail",
     meta: { requiresAuth: true },
     component: ()=> import("../components/product/product_detail.vue"),
   },    
-=======
+  { 
     path: "/registro",
     name: "register-2",
     meta: { requiresAuth: true },
@@ -45,7 +44,6 @@ export default [
     component: ()=> import("../components/register/register.vue"),
   },  
 
->>>>>>> 4117a24c1caaef67b709c6bcb03a2de1ed64889e
 //   {
 //     path: "/inicio-sesion",
 //     name: "login",
