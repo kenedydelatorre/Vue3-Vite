@@ -17,6 +17,7 @@ declare module '@vue/runtime-core' {
     HeaderFooter: typeof import('./src/components/globals/header-footer.vue')['default']
     HeaderLmenusSearchFooter: typeof import('./src/components/globals/header-lmenus-search-footer.vue')['default']
     HeaderMenus: typeof import('./src/components/globals/header-menus.vue')['default']
+    ImageContent: typeof import('./src/components/globals/image-content.vue')['default']
     Offers: typeof import('./src/components/offers/offers.vue')['default']
     Product: typeof import('./src/components/product/product.vue')['default']
     Product_detail: typeof import('./src/components/product/product_detail.vue')['default']
@@ -26,6 +27,7 @@ declare module '@vue/runtime-core' {
     SearchOffert: typeof import('./src/components/searchProduct/searchOffert.vue')['default']
     SearchProduct: typeof import('./src/components/searchProduct/searchProduct.vue')['default']
     SearchTypeProduct: typeof import('./src/components/searchProduct/searchTypeProduct.vue')['default']
+    SectionContent: typeof import('./src/components/sectionContent/sectionContent.vue')['default']
     Seller: typeof import('./src/components/register/seller/seller.vue')['default']
     SingIn: typeof import('./src/components/singIn/singIn.vue')['default']
   }

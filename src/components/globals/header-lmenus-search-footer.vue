@@ -7,6 +7,7 @@ import Footer from "@/components/globals/footer.vue"
 <template lang="pug">
 Header
 ThreeHeader
-slot
+.container.p-0
+    slot
 Footer
 </template>

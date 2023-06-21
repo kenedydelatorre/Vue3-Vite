@@ -43,6 +43,13 @@ export default [
     meta: { requiresAuth: true },
     component: ()=> import("../components/register/register.vue"),
   },  
+  {
+    path: "/contenido",
+    name: "content",
+    meta: { requiresAuth: true },
+    component: ()=> import("../components/sectionContent/sectionContent.vue"),
+  },  
+    
 
 //   {
 //     path: "/inicio-sesion",
