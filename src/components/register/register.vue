@@ -1,10 +1,13 @@
 <script setup lang="ts">
 import Header from "@/components/globals/header.vue"
 import SectionSeller from "./seller/seller.vue"
+import registerSuccess from "./registerSuccess.vue"
 
 import { ref, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
 
+
+let actionSuccessRegister = ref(false) 
 let profileRegister = ref('') 
 
 onMounted(() => {
@@ -19,14 +22,24 @@ onMounted(() => {
     else
         profileRegister.value = 'vendedor'
 })
+const saveSuccess = (valueRegister) => {
+    actionSuccessRegister.value = true
+
+    setInterval(() => {
+        actionSuccessRegister.value = false
+    }, 5000);
+};
+
 
 </script>
 <template lang="pug">
+template(v-if="actionSuccessRegister")
+    registerSuccess
 Header
 section.container
-    <!-- Section to profile register -->
+    <!-- Section to profile register -->    
     template(v-if="profileRegister === 'comprador'")
-        SectionSeller
+        SectionSeller(@saveSuccess="saveSuccess")
     template(v-else)
         h1 aqui vendedor
 </template>
