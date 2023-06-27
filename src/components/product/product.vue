@@ -17,13 +17,13 @@ import {Lproducts} from "./product.js"
                                 img(src="@/assets/icons/balance.svg" alt="balance")
                                 | Hasta {{ prod.peso }} {{ prod.unidad_medida }}
                             p.card-text 
-                                img(src="@/assets/icons/location.svg" alt="balance")
+                                img(src="@/assets/icons/location.svg" alt="location")
                                 | {{ prod.direccion }}
                             p.card-text 
-                                img(src="@/assets/icons/price.svg" alt="balance")
+                                img(src="@/assets/icons/price.svg" alt="price")
                                 | S/.{{ prod.precio }} por {{ prod.unidad_medida }}
                             p.card-text 
-                                img(src="@/assets/icons/calification.svg" alt="balance")                    
+                                img(src="@/assets/icons/calification.svg" alt="calification")                    
                                 | {{ prod.certificaciones }} Certificaciones
                         .btn-products.text-center.mb-3
                             a.btn.bg-orange-institucional.px-5 Ver oferta
